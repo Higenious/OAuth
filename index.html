@@ -1,0 +1,63 @@
+<html ng-app='Auth'>
+<head>
+    <title>chat App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="google-signin-client_id" content="().apps.googleusercontent.com">-->
+<!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--  Font awesome -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- -<script src="https://apis.google.com/js/client.js" async defer></script>&ndash;&gt;-->
+
+
+<!-- Firebase -->
+
+
+</head> 
+ <body ng-controller="Authcontrol">
+     <div class="container">
+        <div class="page-header">
+          <h2>Chat Here!</h2>
+        </div>
+
+    <div>
+
+        <img src="signup-google.png" ng-click="onGoogleLogin()"><br/>
+
+        <!--<button type="button"  ng-click="onGoogleLogin()" value="Login" style="width: 100px;height: 60px">Google</button>-->
+        <h4>{{gmail.username}}</h4>
+        <h4>{{gmail.email}}</h4>
+        <h4>{{g_image}}</h4>
+
+
+        <img ng-src="{{g_image}}" style="width: 100px; height: 100px">
+        <!--<button type="button" ng-click="facebook" title="Sign in with Facebook">Facebook</button>                -->
+   </div>    
+     </div>
+   <script type="text/javascript" src="js/script.js"></script>
+   <script type="text/javascript">
+         (function () {
+           
+             var p = document.createElement("script");
+             p.type = 'text/javascript';
+             p.async = true;
+             p.src = 'https://apis.google.com/js/client.js?onload=onLoadFunction';
+
+             var s = document.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(p, s);
+ 
+          })();
+
+
+
+   </script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+     <script src="app.js"></script>
+
+ </body>
+    
+</html>
